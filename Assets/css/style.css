@@ -1,0 +1,281 @@
+body {
+    background-color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+.navbar-top {
+    background: rgb(7, 2, 54);
+    position: fixed;
+    text-align: center;
+    z-index: 99
+}
+
+ul li {
+    display: inline-block;
+    padding: 14px;
+    margin-left: -50px;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar-top a {
+    float: center;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 20px;
+}
+
+.navbar-top a:hover {
+    background-color: rgb(184, 184, 184);
+    color: rgb(0, 0, 0);
+}
+
+.navbar-top a.active {
+    background-color: rgb(43, 92, 255);
+    color: rgb(230, 230, 230);
+}
+
+
+/* Below is the code for rendering the "Hero" image */
+
+.image-hero {
+    display: block;
+    background-image: url("../images/portrait.jpg");
+    width: 102%;
+    height: 100vh;
+    position: center;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+/* Below is the code for formatting text over the hero image*/
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    font-size: 35px;
+    transform: translate(-50%, -50%);
+    color: rgb(160, 160, 160);
+}
+
+
+/* About me section begins here */
+
+.about-me-bar {
+    background: #010758;
+}
+
+.about-me-bar h2 {
+    color: rgb(168, 168, 168);
+    text-align: center;
+    font-size: 40px;
+    padding: 0%, 2%;
+}
+
+.about-me-text {
+    display: flex;
+    color: rgb(201, 195, 195);
+    font-size: 20px;
+    line-height: 1.7;
+    margin: 50px;
+    padding: 20px;
+    border: 5px rgb(97, 97, 97) solid;
+}
+
+
+/* Project section begins here */
+
+.work-examples-bar {
+    background: rgb(17, 1, 161);
+    text-align: center;
+    padding: 3px;
+    margin: 10px;
+}
+
+.work-examples-bar h2 {
+    color: rgb(167, 164, 164);
+    padding: 0%, 2%;
+}
+
+.projects-container {
+    width: 15%;
+    margin: 1rem auto;
+}
+
+.proj-gallery {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1vw);
+    transform: translate(-250%, 1%);
+    grid-gap: .5rem;
+    align-content: center;
+}
+
+gallery-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+img {
+    width: 780px;
+    height: auto;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -150%);
+    font-size: 40px;
+    color: white;
+}
+
+#myImage {
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+}
+
+#wrapper {
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    background-color: #000;
+}
+
+gallery-item-top-1 {
+    position: absolute;
+    grid-column-start: 1;
+    grid-column-end: 10;
+    grid-row-start: 1;
+    grid-row-start: 4;
+}
+
+.proj-name-top {
+    position: relative;
+    top: 5%;
+    left: 68%;
+    transform: translate(-40%, -20%);
+    color: white;
+    font-size: 1.5vw;
+    font-weight: 2000;
+    text-shadow: 2px 2px 5px black;
+    text-decoration: underline;
+}
+
+.proj-name-top a:link {
+    color: white;
+    text-decoration: none;
+}
+
+.proj-name-top a:visited {
+    color: rgb(162, 1, 255);
+    text-decoration: none;
+}
+
+.proj-name2 {
+    position: relative;
+    top: 50%;
+    left: 200%;
+    transform: translate(-158%, -980%);
+    color: white;
+    font-size: 1.5vw;
+    font-weight: 2000;
+    text-shadow: 2px 2px 5px black;
+    text-decoration: underline;
+}
+
+.proj-name2 a:link {
+    color: rgb(0, 38, 255);
+}
+
+.proj-name2 a:visited {
+    color: rgb(162, 1, 255);
+    text-decoration: none;
+}
+
+.proj-name3 {
+    position: relative;
+    top: 50%;
+    left: 10%;
+    transform: translate(35%, -840%);
+    color: white;
+    font-size: 1.5vw;
+    font-weight: 2000;
+    text-shadow: 2px 2px 5px black;
+    text-decoration: underline;
+}
+
+.proj-name3 a:link {
+    color: rgb(0, 38, 255);
+}
+
+.proj-name3 a:visited {
+    color: rgb(162, 1, 255);
+    text-decoration: none;
+}
+
+.gallery-item-2 {
+    position: relative;
+    grid-column-start: 30;
+    grid-column-end: 10;
+    grid-row-start: 8.5;
+    grid-row-end: 9;
+    transform: translate(-10%, -11%);
+}
+
+.gallery-item-3 {
+    position: relative;
+    object-fit: cover;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 10;
+    grid-row-end: 9;
+    transform: translate(50%, -11%);
+}
+
+
+/* Contact info located here in the Footer */
+
+.footer-contact {
+    background: rgb(2, 0, 36);
+    padding-top: 10px;
+}
+
+.footer-contact h2 {
+    color: rgb(151, 151, 151);
+    padding: 20px;
+    font-size: 25px;
+}
+
+.footer-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-basis: auto;
+}
+
+.logo {
+    height: 100px;
+    width: 100px;
+}
+
+.box1 {
+    width: 275px;
+}
+
+.box2 {
+    width: 150px
+}
